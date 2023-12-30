@@ -1,8 +1,8 @@
 import {useState} from 'react'
 import { Box,Typography,useTheme } from '@mui/material'
 import FlexBetween from '../Basic/FlexBetween'
-import PixIcon from "@mui/icons-material/Pix"
 import { Link } from 'react-router-dom'
+import { Home} from '@mui/icons-material'
 
 
 type Props = {}
@@ -15,9 +15,9 @@ const Navbar  = (props: Props) => {
     <FlexBetween mb='.25rem' p='.5rem 0rem' color={palette.grey[300]}>
        
         <FlexBetween gap=".75rem">
-            <PixIcon sx={{fontSize:"28px"}}/>
+            <Home sx={{fontSize:"28px"}}/>
             <Typography variant='h4' fontSize="16px">
-                Finanseer
+                Finance App
             </Typography>
         </FlexBetween>
 
@@ -34,7 +34,7 @@ const Navbar  = (props: Props) => {
                     Dashboard
                 </Link>
             </Box>
-            <Box> 
+            {/* <Box> 
                 <Link 
                     to="/predictions"
                     onClick={()=>setSelected('predictions')}
@@ -45,7 +45,7 @@ const Navbar  = (props: Props) => {
                     >
                         Predictions
                 </Link>
-            </Box>
+            </Box> */}
         </FlexBetween>
 
     </FlexBetween>

@@ -20,7 +20,7 @@ function App() {
         <Routes>
         
           <Route path='/' element={<Dashboard/>} />
-          <Route path='/Predictions' element={<div>Predictions Page</div>} />
+          {/* <Route path='/Predictions' element={<div>Predictions Page</div>} /> */}
         </Routes>
         </Box>
         </ThemeProvider>
